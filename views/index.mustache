@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+	<main>
+	    <h1>To Doody</h1>
+	    <div class="inputArea">
+		<input type="text"><div id="submitButton" type="submit">+</div>
+	    </div>
+	<h2>Stuff to Do</h2>
+	<div class="incompleteTodosContainer">
+	    {{#incompleteTodos}}
+		<div class="listItem" data-id="{{id}}">
+		    <div class="completeButton">&#10003;</div>
+		    <div class="label">{{item}}</div></div>
+	    {{/incompleteTodos}}
+	</div>
+	<h2>Stuff Done Did</h2>
+	<div class="completeTodosContainer">
+	    {{#completeTodos}}
+		
+		<div class="listItem" data-id="{{id}}">
+		    <div class="trashButton">&#128465;</div>
+		    <div class="label">{{item}}</div>
+		</div>
+	    {{/completeTodos}}
+	</div>
+	<script src="main.js"></script>
+	</main>
+    </body>
+</html>

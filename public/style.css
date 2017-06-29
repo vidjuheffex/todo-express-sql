@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    box-sizing: border-box;
+}
+
+html {
+    
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+h2 {
+    padding: .5rem;
+}
+
+button {
+    background: transparent;
+    padding: 1px;
+    border: 1px solid grey; 
+}
+
+.completeButton {
+    height: 1.5rem;
+    width: 1.5rem;
+    /* border: 1px solid grey; */
+    display: inline-block;
+    /* border-radius: 50%; */
+    margin: 0 1rem;
+    color: green;
+    opacity: .25;
+    vertical-align: text-bottom;
+    text-align: center;
+}
+
+.completeButton:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.listItem {
+    height: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.label {
+    display: inline-block;
+    height: 1.5rem;
+    vertical-align: text-bottom;
+}
+
+.trashButton {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    margin: 0 1rem;
+    vertical-align: text-bottom;
+    text-align: center;
+}
+
+.trashButton:hover {
+    transform: scale(1.2);
+}
+
+main {
+    text-align: left;
+    display: inline-block;
+}
+
+
+#submitButton {
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    background: rgba(0,150,0,.5);
+    float: right;
+    width: 3rem;
+    height: 3rem;
+}
+
+#submitButton:hover {
+    background: rgba(0, 150, 0, 1);
+}
+
+input {
+    border: none;
+    padding: 1rem;
+    width: calc(100% - 3rem)
+}
+
+.inputArea {
+    border: 1px solid grey;
+}
